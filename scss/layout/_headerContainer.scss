@@ -1,0 +1,37 @@
+.headerContainer{
+    &__form{
+        @include flexCenter;
+        .headerContainer__text{
+            width: 85%;
+            border-radius: 36px 0 0 36px;
+            height: 36px;
+            color: $font-color;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: none;
+            outline: none;           
+            background-color: rgba(#fff, .5);
+            backdrop-filter: blur(20px);
+            &::placeholder{
+                color: $font-fade-color;
+            }
+        }
+        .headerContainer__button{
+            text-align: center;
+            color: $font-color;
+            height: 36px;
+            aspect-ratio: 1 / 1;
+            border-radius: 0 30px 30px 0; 
+            border: none;
+            outline: none;           
+            background-color: rgba(#fff, .5);
+            backdrop-filter: blur(20px);
+            &:active,
+            &:hover{
+                cursor: pointer;
+                text-shadow: 0 0 3px rgba(#000, .5); 
+            }
+        }
+    }
+}

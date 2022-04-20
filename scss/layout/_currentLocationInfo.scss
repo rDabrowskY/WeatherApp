@@ -1,0 +1,13 @@
+.currentLocationInfo{
+    @include flexCenter;
+    flex-direction: column;
+    margin: 10px 0;
+    &__name{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    &__time{
+        font-size: .8rem;
+        font-weight: lighter
+    }
+}

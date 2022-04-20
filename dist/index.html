@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Weather App by rDabrowsky</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body class="default">
+    <main>
+        <header id="headerContainer" class="headerContainer">
+            <form id="headerContainer__form" class="headerContainer__form">
+                <input type="text" id="headerContainer__text" class="headerContainer__text" placeholder="Country, Sate, City or Zip Code " size="40" autocomplete="off">
+                <button type="submit" id="headerConatiner__button" class="headerContainer__button" title="Submit Location">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-sync fa-spin none"></i>
+                </button>
+            </form>
+        </header>
+        <section id="currentLocationInfo" class="currentLocationInfo">
+            <h2 class="currentLocationInfo__name" id="currentLocationInfo__name"></h2>
+            <p class="currentLocationInfo__time" id="currentLocationInfo__time"></p>
+        </section>
+        <section id="currentConditions" class="currentConditions">
+            <div id="currentConditions__container" class="currentConditions__container"></div>
+        </section>
+        <nav id="navButtons" class="navButtons">
+            <button type="submit" id="getLocation" class="navButton" title="Get Geolocation">
+                <i class="fa fa-map-marker-alt"></i>
+                <i class="fa fa-sync fa-spin none"></i>
+            </button>
+            <button type="submit" id="home" class="navButton" title="Home">
+                <i class="fa fa-home"></i>
+                <i class="fa fa-sync fa-spin none"></i>
+            </button>
+            <button type="submit" id="saveLocation" class="navButton" title="Save Location">
+                <i class="fa fa-save"></i>
+                <i class="fa fa-sync fa-spin none"></i>
+            </button>
+            <button type="submit" id="toggleMeasurements" class="navButton" title="Toggle Measurements">
+                <i class="fa fa-ruler"></i>
+                <i class="fa fa-sync fa-spin none"></i>
+            </button>
+            <button type="submit" id="refresh" class="navButton" title="Refresh Weather">
+                <i class="fa fa-refresh"></i>
+                <i class="fa fa-sync fa-spin none"></i>
+            </button>
+        </nav>
+        <hr>
+        <section id="dailyConditions" class="dailyConditions">
+            <div class="dailyConditions__container" id="dailyConditions__container"></div>
+        </section>
+    </main>
+</body>
+</html>

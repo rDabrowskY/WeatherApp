@@ -1,0 +1,21 @@
+.dailyConditions{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    &__container{
+        flex-grow: 1;
+        @include flexCenter;
+        justify-content: space-evenly;
+        font-size: .9rem;
+        @include mq(500px){
+            font-size: .7rem;
+        }
+        .forecastDay{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-shadow: 0 0 4px rgba(#000, .3);
+        }
+    }
+}
